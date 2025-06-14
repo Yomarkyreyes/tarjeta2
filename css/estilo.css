@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+h1{
+    text-align: center;
+    color: #20497e;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 80px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  background: white;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100px;
+  height: auto;
+  margin: 20px auto 10px;
+}
+
+.tarjeta h3 {
+  margin: 10px 0 5px;
+}
+
+.tarjeta p {
+  font-size: 12px;
+  padding: 0 10px;
+  color: #555;
+}
+
+.price-1 {
+  font-size: 18px;
+  font-weight: bold;
+  color:rgb(158, 2, 2);
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+.price-2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+.price-3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fde400;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.footer {
+  background-color: rgb(146, 2, 2);
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tarjeta:nth-child(2) .footer {
+  background-color: #383636;
+}
+
+.tarjeta:nth-child(3) .footer {
+  background-color: #fcd913;
+}
+
+
+.tarjeta:hover .price {
+  color: #0004ff;
+}
+
+.tarjeta:hover .footer {
+  background-color: #35ad1d;
+}
